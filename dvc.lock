@@ -33,3 +33,20 @@ stages:
       hash: md5
       md5: 3e7d33a0b81956f0c45d17f919ef0516
       size: 77694
+  features:
+    cmd: uv run src/features.py data/transformed/events.csv 
+      data/features/events.csv
+    deps:
+    - path: data/transformed/events.csv
+      hash: md5
+      md5: 3e7d33a0b81956f0c45d17f919ef0516
+      size: 77694
+    - path: src/features.py
+      hash: md5
+      md5: 3cc5bd639d5ba2efde0e3f326c7af54a
+      size: 1084
+    outs:
+    - path: data/features/events.csv
+      hash: md5
+      md5: 02aad9ba32952fc056878035872349c8
+      size: 113955
