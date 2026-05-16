@@ -14,3 +14,11 @@ stages:
     - src/transform.py
     outs:
     - data/transformed/events.csv
+  features:
+    cmd: uv run src/features.py data/transformed/events.csv 
+      data/features/events.csv
+    deps:
+    - data/transformed/events.csv
+    - src/features.py
+    outs:
+    - data/features/events.csv
