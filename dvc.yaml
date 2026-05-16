@@ -1,0 +1,8 @@
+stages:
+  clean:
+    cmd: uv run src/clean.py data/raw/events.csv data/clean/events.csv
+    deps:
+    - data/raw/events.csv
+    - src/clean.py
+    outs:
+    - data/clean/events.csv
