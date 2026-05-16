@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  clean:
+    cmd: uv run src/clean.py data/raw/events.csv data/clean/events.csv
+    deps:
+    - path: data/raw/events.csv
+      hash: md5
+      md5: 431ff8b1e99f6c5ac0a423d9e37ac2a9
+      size: 73240
+    - path: src/clean.py
+      hash: md5
+      md5: 8bfba43daf99e826f448fc2cc3712988
+      size: 2257
+    outs:
+    - path: data/clean/events.csv
+      hash: md5
+      md5: 5693282c79d6542e395e30277b223703
+      size: 59825
