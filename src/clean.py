@@ -7,7 +7,7 @@ from datetime import datetime
 
 print('cleaning...')
 
-VALID_EVENT_TYPES = {"click", "login", "view", "scroll", "buy", "purchase"}
+VALID_EVENT_TYPES = {"click", "login", "view", "scroll", "purchase"}
 
 TIMESTAMP_FORMATS = (
     "%Y-%m-%dT%H:%M:%S.%f",
